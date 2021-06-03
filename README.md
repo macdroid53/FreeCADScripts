@@ -21,7 +21,7 @@ Put copies of all files associated with the script (Python, images, etc.) from t
 
 There are typically two Python files with each utility. One contains the main code <utility name>.py, the other <utility name>ui.py contains any associated UI ( dialogs ).
 
-THe utility can be run from the FreeCAD Macro menu by selected and executing the <utility name>.py file
+The utility can be run from the FreeCAD Macro menu by selected and executing the <utility name>.py file
 
 Once installed, the utilities can also be added to toolbars as described in the FreeCAD wiki:
 [Customize Toolbars](https://wiki.freecadweb.org/Customize_Toolbars)
