@@ -14,10 +14,10 @@ the same but constrained to a vertex selected bt the use before the executing th
 The script displays a dialog where the user must enter the values of the rectangle height, witdh, and corner radius.
 
 ## Installation
-[Named Link](https://wiki.freecadweb.org/How_to_install_macros#Macros_directory "Macros directory")
+[Macros directory](https://wiki.freecadweb.org/How_to_install_macros#Macros_directory "Macros directory")
 
 
 
-Known issues:
-The location of the icon used in the dialog is currently hard coded and must be modified by the user to reflect the location
+## Known issues:
+* The location of the icon used in the dialog is currently hard coded and must be modified by the user to reflect the location
 of the icon on system.
