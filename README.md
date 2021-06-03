@@ -23,6 +23,8 @@ There are typically two Python files with each utility. One contains the main co
 
 THe utility can be run from the FreeCAD Macro menu by selected and executing the <utility name>.py file
 
+Once installed, the utilities can also be added to toolbars as described in the FreeCAD wiki:
+[Customize Toolbars](https://wiki.freecadweb.org/Customize_Toolbars)
 
 ## Known issues:
 * None
