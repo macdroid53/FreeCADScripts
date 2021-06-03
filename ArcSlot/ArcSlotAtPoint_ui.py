@@ -6,6 +6,7 @@ required values to construct the slotted arc
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import FreeCAD
 
 from PySide2 import QtGui, QtCore, QtWidgets
@@ -54,7 +55,7 @@ class ArcSlotAtPoint_Dlg(QtWidgets.QDialog):
       title_lay.addWidget(self.txt_win)
 
       #image01 = '/home/mac/SharedData/FC_common/ArcSlot.png'
-      image01 = '/home/mac/SharedData/FC_common/ArcSlotMenuIcon.png'
+      image01 = os.path.dirname(__file__) + '/ArcSlotMenuIcon.png'
       arcslot_pixmap = QtGui.QPixmap(image01)
       imgwid=QtWidgets.QLabel()
       imgwid.setPixmap(arcslot_pixmap.scaledToWidth(128))

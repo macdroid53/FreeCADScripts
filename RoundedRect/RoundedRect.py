@@ -9,6 +9,7 @@ if DEBUG:
     ptvsd.enable_attach(address=('localhost', 5678))
     ptvsd.wait_for_attach()
 
+import os
 import re
 import math
 import itertools

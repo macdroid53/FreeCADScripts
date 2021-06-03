@@ -6,6 +6,7 @@ required values to construct the rectangle with rounded corners
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import FreeCAD
 
 from PySide2 import QtGui, QtCore, QtWidgets
@@ -53,7 +54,9 @@ class RoundedRect_Dlg(QtWidgets.QDialog):
       self.txt_win.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
       title_lay.addWidget(self.txt_win)
 
-      image01 = '/home/mac/SharedData/FC_common/RoundedRect.png'
+      #image01 = '/home/mac/SharedData/FC_common/RoundedRect.png'
+      image01 = os.path.dirname(__file__) + '/RoundedRect.png'
+
       arcslot_pixmap = QtGui.QPixmap(image01)
       imgwid=QtWidgets.QLabel()
       imgwid.setPixmap(arcslot_pixmap.scaledToWidth(128))
