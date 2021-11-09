@@ -36,3 +36,4 @@ Execute the macro (Python) (either from the Macro menu or from the toolbar creat
 
 Select the desired symbol and click Open and the symbol will be added to the TechDraw page.
 
+*Note: Insert_Custom_Symbol-1.py is a test version of this script dealing with differences between FreeCAD 0.19 and 0.20*
