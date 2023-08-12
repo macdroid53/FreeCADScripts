@@ -177,6 +177,7 @@ def getpoint(edit_mode):
             ''' '''
             verts = []
             selected_thing = SkeName.Geometry[Vert_ID]
+            print('TypeID: ' + selected_thing.TypeId)
             if selected_thing.TypeId == 'Part::GeomPoint':
                 gpnt=SkeName.Geometry[Vert_ID]
                 #verts.append(FreeCAD.Vector(gpnt.X,gpnt.Y,gpnt.Z))
@@ -186,6 +187,14 @@ def getpoint(edit_mode):
                     cenvec=selected_thing.StartPoint
                 else:
                     cenvec=selected_thing.EndPoint
+            elif selected_thing.TypeId == 'Part::GeomCircle':
+                print("Pos_ID: " + str(Pos_ID))
+                if Pos_ID == 3:
+                    cenvec=selected_thing.Center
+            elif selected_thing.TypeId == 'Part::GeomArcOfCircle':
+                print("Pos_ID: " + str(Pos_ID))
+                if Pos_ID == 3:
+                    cenvec=selected_thing.Center
 
     axis = FreeCAD.Vector(0, 0, 1)
     axis_rev = FreeCAD.Vector(0, 0, -1)
